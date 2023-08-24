@@ -1,4 +1,5 @@
 import { americanStates } from '../Services/States';
+import { countries } from '../Services/countries';
 import { useState, ChangeEvent } from 'react';
 
 export default function Form() {
@@ -8,10 +9,12 @@ export default function Form() {
     Email: '',
     PhoneNumber: '',
     Address: '',
+    Address2: '',
     HouseNumber: '',
     City: '',
     State: '',
-    PostalCode: ''
+    PostalCode: '',
+    Country: ''
   });
 
   const handleInputChange = (event: ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
@@ -21,7 +24,7 @@ export default function Form() {
       [name]: value
     }));
   };
-const {FirstName, LastName, Email, PhoneNumber, Address, HouseNumber, City, State, PostalCode} = formData;
+const {FirstName, LastName, Email, PhoneNumber, Address, Address2, HouseNumber, City, State, PostalCode, Country} = formData;
   return (
     <div>
     <fieldset>
@@ -77,6 +80,14 @@ const {FirstName, LastName, Email, PhoneNumber, Address, HouseNumber, City, Stat
         name="Address"
         required/>
       <br/>
+      <label htmlFor='Address2' />Address2:
+        <input 
+        value={Address2} 
+        onChange={handleInputChange} 
+        type="text" 
+        id="Address2" 
+        name="Address2"/>
+      <br/>
 
       <label  htmlFor='HouseNumber'>House Number:</label>
      <input  
@@ -88,7 +99,6 @@ const {FirstName, LastName, Email, PhoneNumber, Address, HouseNumber, City, Stat
      required/>
       <br/>
 
-
       <label htmlFor='City'>City:</label>
      <input 
      value={City} 
@@ -98,7 +108,22 @@ const {FirstName, LastName, Email, PhoneNumber, Address, HouseNumber, City, Stat
      name="City" 
      required/>
       <br/>
-
+      <label htmlFor='Country'>Country:
+     <select 
+     value={Country}
+     onChange={handleInputChange} 
+     id="Country" 
+     name="Country" 
+     required>
+      <option  value="" disabled selected>Select the country</option>
+      {countries.map((countriesArr) => 
+         <option 
+         key={countriesArr}
+         value={countriesArr}>{countriesArr}</option>
+      )}
+     </select>
+     </label>
+     <br/>
       <label htmlFor='State'>State:
      <select 
      value={State}
