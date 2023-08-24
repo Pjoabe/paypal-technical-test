@@ -1,7 +1,9 @@
 export default function Header () {
   return(
-    <header>
-    <h2>Paypal Store</h2>
+    <header className="">
+      <div>
+    <h2>Paypal Test Store</h2>
+     </div>
     </header>
   );
 } 
