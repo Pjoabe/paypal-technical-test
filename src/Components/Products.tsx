@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import PaypalButton from "../Services/PaypalButton";
 import { getProduct } from "../Services/GetProduct";
 import Header from "./Header";
-import Form from "./Form";
+import Form from "./Form"; 
 interface Product {
   id: string;
   title: string;
@@ -28,16 +28,18 @@ function Products() {
   return (
     <>
       <Header />
-       <div className="display: flex justify-center">
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <div key={product?.id} className="display: flex justify-center">
-              <h2 className="text-xl font-semibold mb-2 text-red-500">{product?.title}</h2>
+       <div className="" >
+        <div className="">
+            <div key={product?.id} className="">
+              <h2 className="border border-red-500">{product?.title}</h2>
               <img
-              className="w-full h-auto mb-2"
+              className=""
               src={`http://http2.mlstatic.com/D_630013-MLA50879230016_072022-I.jpg`} 
               alt={product?.title} />
-              <span className="text-lg text-red-500">${product?.price}</span>
-              <PaypalButton />
+              <span className="">${product?.price}</span>
+              <div className="form-group col-md-6">
+              <button className="btn btn-primary mb-2">Buy</button>
+              </div>
             </div>
         </div>
       </div>
