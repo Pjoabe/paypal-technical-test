@@ -1,13 +1,12 @@
-
 # Paypal Technical Test Application
 
-Esta é a aplicação Paypal Technical Test, desenvolvida como parte de um teste técnico. Ela consiste em uma aplicação fullstack com frontend e backend, onde o frontend é construído usando Vite, TypeScript, React, ContextAPI, React Router e Bootstrap, enquanto o backend é desenvolvido com TypeScript, Node.js, Nodemon, Dotenv, Axios e Cors.
+Welcome to the Paypal Technical Test Application, crafted as a part of a technical evaluation. This comprehensive fullstack application showcases both frontend and backend components. The frontend is built using Vite, TypeScript, React, ContextAPI, React Router, and Bootstrap. Meanwhile, the backend is fashioned using TypeScript, Node.js, Nodemon, Dotenv, Axios, and Cors.
 
-## Visão Geral
+## Overview
 
-A aplicação Paypal Technical Test é uma demonstração fullstack que ilustra a integração entre o frontend e o backend. Ela permite que os usuários realizem determinadas ações (descrição das funcionalidades específicas).
+The Paypal Technical Test Application serves as a fullstack demonstration, highlighting the seamless integration between the frontend and backend components. Users can engage in a range of specific functionalities and actions (detailed in the description).
 
-## Tecnologias Utilizadas
+## Technologies Employed
 
 ### Frontend
 
@@ -26,39 +25,34 @@ A aplicação Paypal Technical Test é uma demonstração fullstack que ilustra 
 - Dotenv
 - Axios
 - Cors
-- Docker (opcional para facilitar a execução)
+- Docker (optional for streamlined execution)
 
-## Instalação e Uso
+## Installation and Usage
 
-Para clonar e executar a aplicação localmente, siga as instruções abaixo:
+To clone and run the application locally, follow the steps below:
 
 ### Frontend
 
-1. Clone o repositório:
+1. Clone the repository:
 
 ```bash ```
 git clone https://github.com/Pjoabe/paypal-technical-test
 cd paypal-technical-test/frontend
-
-# Instale as dependências:
+```bash```
+# Install dependencies:
 npm install
 
-#deixe o site visivel no navegador
+# Launch the website in the browser:
 npm run dev
+The frontend will be accessible at http://localhost:5173/
 
-O frontend estará acessível em http://localhost:5173/
+Backend
 
-
-2. Backend
-
-#Execute os serviços necessários (Docker):
-
+#Run the necessary services (Docker):
 ```bash```
 docker-compose up -d
 docker exec -it paypal-back bash
 
-#Dentro do terminal do bash, inicie o backend:
+# Inside the bash terminal, start the backend:
 npm run dev
-
-O backend estará rodando em http://localhost:3001.
-
+#The backend will be up and running at http://localhost:3001.
