@@ -1,6 +1,6 @@
 # Paypal Technical Test Application
 
-Welcome to the Paypal Technical Test Application, crafted as a part of a technical evaluation. This comprehensive fullstack application showcases both frontend and backend components. The frontend is built using Vite, TypeScript, React, ContextAPI, React Router, and Bootstrap. Meanwhile, the backend is fashioned using TypeScript, Node.js, Nodemon, Dotenv, Axios, and Cors.
+Welcome to the Paypal Technical Test Application, crafted as a part of a technical evaluation. This comprehensive fullstack application showcases both frontend and backend components. The frontend is built using Vite, TypeScript, React, ContextAPI, React Router, and Bootstrap. Meanwhile, the backend is developed using TypeScript, Node.js, Nodemon, Dotenv, Axios, and Cors.
 
 ## Overview
 
