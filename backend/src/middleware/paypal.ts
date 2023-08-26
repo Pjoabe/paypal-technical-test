@@ -6,7 +6,7 @@ export function validateFormAndCart(req: Request, res: Response, next: NextFunct
     }
   
     const { form } = req.body;
-    const expectedFields = ['firstName', 'lastName', 'address1', 'address2', 'city', 'state', 'postalCode', 'country'];
+    const expectedFields = ['address1', 'address2', 'city', 'state', 'postalCode', 'country'];
     for (const field of expectedFields) {
       if (!form[field]) {
         return res.status(400).json({ error: `Field '${field}' not found in the form.` });

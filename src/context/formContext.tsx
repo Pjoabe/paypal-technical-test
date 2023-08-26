@@ -14,9 +14,7 @@ interface Iform {
     country: string,
 }
 
-interface Iquantity {
-  cartQuantity: number,
-}
+
 
 interface ComponentProps {
   children: ReactNode;
@@ -37,18 +35,16 @@ country: 'US',
 }
 
 
-const INITIAL_STATE2 = {
-cartQuantity: 1,
-}
+const INITIAL_STATE2 = 1;
 
 
 
 
 export const FormContext = createContext<{
-cartQuantity: Iquantity;
+cartQuantity: number;
 
 formData: Iform;
-setCartQuantity: React.Dispatch<React.SetStateAction<Iquantity>>
+setCartQuantity: React.Dispatch<React.SetStateAction<number>>
 setFormData:  React.Dispatch<React.SetStateAction<Iform>>
 }>({
 cartQuantity: INITIAL_STATE2,

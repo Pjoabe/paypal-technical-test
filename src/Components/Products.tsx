@@ -1,7 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { getProduct } from "../Services/GetProduct";
 import Header from "./Header";
 import PaypalButton from "../Services/PaypalButton";
+import { FormContext } from "../context/formContext";
 
 interface Product {
   id: string;
@@ -12,7 +13,7 @@ interface Product {
 function Product() {
 
   const [product, setProduct] = useState<Product>();
-  const [cartQuantity, setCartQuantity] = useState<number>(1);
+  const {cartQuantity, setCartQuantity} = useContext(FormContext)
 
   useEffect(() => {
     async function fetchData() {
@@ -50,7 +51,7 @@ function Product() {
               src={`http://http2.mlstatic.com/D_630013-MLA50879230016_072022-I.jpg`}
               alt={product?.title}
             />
-            <span className="price">${Number(product?.price) * cartQuantity}</span>
+            <span className="price">${Number(product?.price ?? 0) * cartQuantity}</span>
             <div 
             // style={{  margin: "0 auto", border: "1px solid red", display: "flex", flexDirection: "column", justifyContent: "center"  }}
              className="form-group col-md-6">

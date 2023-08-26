@@ -3,8 +3,6 @@ import services from '../service';
 
 const createOrder = async (req: Request, res: Response) => {
     const { form, cart } = req.body
-    cart.quantity = Number(cart.quantity) ?? undefined
-    cart.value = Number(cart.value ) ?? undefined
     try {
         const order = await services.paypalApi.createOrder({form, cart})
         res.status(201).json(order);

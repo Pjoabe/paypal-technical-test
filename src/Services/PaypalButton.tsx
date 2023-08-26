@@ -5,7 +5,7 @@ import { FormContext } from "../context/formContext";
 
 export default function PaypalButton() {
 
-const {formData} = useContext(FormContext)
+const {formData, cartQuantity} = useContext(FormContext)
 
 
   function createOrder() {
@@ -14,7 +14,7 @@ const {formData} = useContext(FormContext)
         { 
           id: "MLA1376164717",
           name: "Telefono Celular Alcatel 3h Plus 64gb 3gb Ram Space Gray",
-          quantity: "1",
+          quantity: cartQuantity,
           value: 69999,
         },
       ], form: formData, 
