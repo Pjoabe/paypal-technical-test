@@ -52,9 +52,18 @@ The frontend will be accessible at http://localhost:5173/
 
 #Run the necessary services (Docker):
 ```bash```
+
+
 docker-compose up -d
+
+
 
 docker exec -it paypal-back bash
 
+
+
 npm run dev
+
+
+
 #The backend will be up and running at http://localhost:3001.
