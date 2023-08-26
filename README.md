@@ -37,8 +37,10 @@ To clone and run the application locally, follow the steps below:
 
 ```bash ```
 git clone https://github.com/Pjoabe/paypal-technical-test
+
+
 cd paypal-technical-test/frontend
-```bash```
+
 # Install dependencies:
 npm install
 
