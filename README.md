@@ -48,11 +48,13 @@ npm install
 npm run dev
 The frontend will be accessible at http://localhost:5173/
 
-Backend
+###Backend
 
 #Run the necessary services (Docker):
 ```bash```
 docker-compose up -d
+
+
 docker exec -it paypal-back bash
 
 # Inside the bash terminal, start the backend:
