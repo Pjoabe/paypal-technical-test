@@ -1,6 +1,6 @@
 export default function Header () {
   return(
-    <header className="border border-red-500 text-7xl">
+    <header className="header">
       <div>
     <h2>Paypal Test Store</h2>
      </div>

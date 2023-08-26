@@ -1,16 +1,32 @@
-
-/* 
-body {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.header {
+  text-align: center;
+  padding: 2rem;
+  font-size: large;
+}
+.header div h2 {
+font-size: 2em;
 }
 
+.header1StDiv {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 
+.price {
+  font-size: 30px;
+}
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-} */
+.productTitle {
+  font-size: larger;
+}
+
+.submitBtn {
+  margin: auto;
+  width: 10rem;
+}
+
+.stateClass {
+  width: 15rem;
+  margin-right: 245px;
+}
