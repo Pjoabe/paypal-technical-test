@@ -6,7 +6,7 @@ export interface IItem {
 }
 
 export interface IForm {
-  address1: string; 
+  address: string; 
   address2: string;
   city: string; 
   state: string;

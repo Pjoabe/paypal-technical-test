@@ -53,12 +53,12 @@ export async function capturePayment(orderID: string): Promise<any> {
   }
 
 export async function createOrder({form, cart}: {form: IForm, cart: IItem[]}) {
-const { address1, address2, city, state, postalCode, country } = form
+const { address, address2, city, state, postalCode, country } = form
 
   const value = await calcSumItens(cart)
 try {
   const shipping = {
-    address: { "address_line_1": address1, 
+    address: { "address_line_1": address, 
     "address_line_2": address2, 
     "admin_area_2": city, 
     "admin_area_1": state, 
