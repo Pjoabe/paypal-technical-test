@@ -67,3 +67,8 @@ npm run dev
 
 
 #The backend will be up and running at http://localhost:3001.
+
+# backend routes:
+
+#/create
+#/capture
